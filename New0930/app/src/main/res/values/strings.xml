@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">New0930</string>
+    <string name="app_author">木河</string>
+    <string name="app_version">Ver 1.0.1</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@android:id/tabhost">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/layout_sheet3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_widthPercent="20%"
+                    app:layout_heightPercent="80%"
+                    android:background="#00ff00"
+                    ></View>
+            </android.support.percent.PercentRelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_sheet1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_sheet2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </RelativeLayout>
+        </FrameLayout>
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TabWidget>
+    </LinearLayout>
+
+</TabHost>
